@@ -161,7 +161,6 @@ def player_stats(input)
 end
 
 
-
 def all_teams
   game_hash.values
 end
