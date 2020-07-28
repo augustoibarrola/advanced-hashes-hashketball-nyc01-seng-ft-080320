@@ -130,7 +130,7 @@ def all_players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
-def player_stats
+def player_stats(name)
   all_players[name.to_sym]
 end
 
