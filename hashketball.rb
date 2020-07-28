@@ -160,7 +160,7 @@ def team_colors(team_name)
 end
 
 def player_numbers(team_name)
-  find_team(team_name)[:players].collect {|name, stats| stats[:number]}
+  find_team(team_name)[:players].map{|name, stats| stats[:number]}
 end
 
 def player_w_biggest_feet
