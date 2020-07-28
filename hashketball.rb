@@ -133,12 +133,12 @@ end
 
 def player_stats(player_name)
   all_players[player_name.to_sym]
-  binding.pry
 end
 
 def num_points_scored(player_name)
   player_stats(player_name)[:points]
   end
+  binding.pry
 
 def shoe_size(player_name)
   player_stats(player_name)[:shoe]
