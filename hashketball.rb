@@ -126,9 +126,14 @@ def game_hash
   }
 end
 
-def all_players
-  home = game_hash[:home][:players].zip(game_hash[:away][:players])
-  home.flatten
+def num_points_scored(player_name)
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == player_name
+        return player[:points]
+      end
+    end
+  end
 end
 
 def player_stats(input)
@@ -140,16 +145,6 @@ def player_stats(input)
             return player
           end
         end
-      end
-    end
-  end
-end
-
-def num_points_scored(player_name)
-  game_hash.each do |team, team_info|
-    team_info[:players].each do |player|
-      if player[:player_name] == player_name
-        return player[:points]
       end
     end
   end
