@@ -141,3 +141,31 @@ def num_points_scored(player_name)
 def shoe_size(player_name)
   player_stats(player_name)[:shoe]
 end
+
+def all_teams
+  game_hash.values
+end
+
+def find_team(team_name)
+  all_teams.find { |team| team[:team_name] == team_name }
+end
+
+def team_names
+  all_teams.map { |team| team[:team_name] }
+end
+
+def team_colors(team_name)
+  find_team(team_name)[:colors]
+end
+
+def player_numbers(team_name)
+  find_team(team_name)[:players].map {|name, stats| stats[:number]}
+end
+
+def player_w_biggest_feet
+  all_players.max_by { |name, stats| stats[:shoe] }
+end
+
+def big_shoe_rebounds
+  player_w_biggest_feet[1][:rebounds]
+end
