@@ -132,7 +132,7 @@ def all_players
 end
 
 def player_stats
-  all_players[player_name]
+  all_players
 end
 
 def num_points_scored(player_name)
