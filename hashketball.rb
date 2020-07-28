@@ -112,14 +112,14 @@ def game_hash
         },
         {
           player_name: "Kemba Walker",
-          number: 33,
-          shoe: 15,
-          points: 6,
-          rebounds: 12,
-          assists: 12,
-          steals: 7,
-          blocks: 5,
-          slam_dunks: 12
+          number: "33",
+          shoe: "15",
+          points: "6",
+          rebounds: "12",
+          assists: "12",
+          steals: "7",
+          blocks: "5",
+          slam_dunks: "12"
         }
       ]
     }
@@ -132,7 +132,7 @@ def all_players
 end
 
 def player_stats(player_name)
-  all_players[player_name.to_sym]
+  all_players[player_name]
 end
 
 def num_points_scored(player_name)
