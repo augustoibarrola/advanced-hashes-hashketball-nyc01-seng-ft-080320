@@ -131,8 +131,8 @@ def all_players
   home.flatten
 end
 
-def player_stats
-  all_players
+def player_stats(name)
+  all_players[name.to_sym]
 end
 
 def num_points_scored(player_name)
