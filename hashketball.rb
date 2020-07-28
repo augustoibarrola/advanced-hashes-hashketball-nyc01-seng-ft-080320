@@ -130,14 +130,14 @@ def all_players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
-def player_stats(name)
-  all_players[name.to_sym]
+def player_stats(player_name)
+  all_players[player_name.to_sym]
 end
 
 def num_points_scored(player_name)
-  player_stats(name)[:points]
+  player_stats(player_name)[:points]
   end
 
-def shoe_size(name)
-  player_stats(name)[:shoe]
+def shoe_size(player_name)
+  player_stats(player_name)[:shoe]
 end
