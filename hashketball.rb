@@ -127,8 +127,8 @@ def game_hash
 end
 
 def all_players
-  home = game_hash[:home][:players].to_h
-  away = game_hash[:away][:players].to_h
+  home = game_hash[:home][:players].to_symb
+  away = game_hash[:away][:players].to_ymb
   home << away
 end
 
