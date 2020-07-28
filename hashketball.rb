@@ -128,7 +128,6 @@ end
 
 def all_players
   game_hash[:home][:players].zip(game_hash[:away][:players])
-  binding.pry
 end
 
 def player_stats(player_name)
