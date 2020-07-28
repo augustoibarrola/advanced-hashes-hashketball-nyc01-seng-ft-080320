@@ -133,7 +133,7 @@ def all_players
 end
 
 def player_stats(player_name)
-  all_players[player_name]
+  all_players(player_name)
   binding.pry
 end
 
