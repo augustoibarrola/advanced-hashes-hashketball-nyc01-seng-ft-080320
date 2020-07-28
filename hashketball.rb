@@ -137,7 +137,7 @@ def player_stats(player_name)
 end
 
 def num_points_scored(player_name)
-  player_stats(player_name)[:points]
+  player_stats(player_name)[:points].to_s
   end
 
 def shoe_size(player_name)
