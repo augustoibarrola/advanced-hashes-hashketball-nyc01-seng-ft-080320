@@ -128,8 +128,8 @@ end
 
 def all_players
   game_hash[:home][:players].zip(game_hash[:away][:players])
-
 end
+binding.pry
 
 def player_stats(player_name)
   all_players[player_name]
