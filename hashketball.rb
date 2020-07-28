@@ -131,7 +131,7 @@ def all_players
 end
 
 def player_stats(player_name)
-  all_players[player_name.to_sym]
+  all_players[player_name]
 end
 
 def num_points_scored(player_name)
