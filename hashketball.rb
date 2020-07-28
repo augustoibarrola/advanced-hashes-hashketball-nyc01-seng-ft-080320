@@ -129,6 +129,7 @@ end
 def all_players
   game_hash[:home][:players]
   game_hash[:away][:players]
+  binding.pry
 end
 
 def player_stats(player_name)
