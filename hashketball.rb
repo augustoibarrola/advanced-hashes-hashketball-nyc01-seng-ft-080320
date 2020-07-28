@@ -126,12 +126,12 @@ def game_hash
   }
 end
 
-def all_players(name)
+def all_players
   home = game_hash[:home][:players].zip(game_hash[:away][:players])
   home.flatten
 end
 
-def player_stats(player_name)
+def player_stats
   all_players[player_name]
 end
 
