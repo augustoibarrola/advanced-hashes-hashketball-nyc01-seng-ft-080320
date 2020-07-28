@@ -126,9 +126,8 @@ def game_hash
   }
 end
 
-def all_players_sample
+def all_players
   all_players = game_hash[:home][:players].merge(game_hash[:away][:players])
-  binding.pry
 end
 
 def player_stats(player_name)
