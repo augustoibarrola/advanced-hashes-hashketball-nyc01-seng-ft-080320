@@ -135,10 +135,10 @@ def player_stats(name)
   all_players[name]
 end
 
-def num_points_scored(player_search)
+def num_points_scored(player_name)
   game_hash.each do |team, team_info|
     team_info[:players].each do |player|
-      if player[:player_name] == player_search
+      if player[:player_name] == player_name
         return player[:points]
       end
     end
@@ -146,7 +146,13 @@ def num_points_scored(player_search)
 end
 
 def shoe_size(player_name)
-  player_stats(player_name)[:shoe]
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == player_name
+        return player[:shoe]
+      end
+    end
+  end
 end
 
 def all_teams
