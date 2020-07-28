@@ -127,7 +127,7 @@ def game_hash
 end
 
 def all_players
-  home = game_hash[:home][:players].zip(away = game_hash[:away][:players])
+  game_hash[:home][:players].zip(game_hash[:away][:players])
   
 end
 
