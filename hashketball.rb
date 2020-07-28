@@ -126,7 +126,7 @@ def game_hash
   }
 end
 
-def all_players
+def all_players(player_name)
   home = game_hash[:home][:players]
   away = game_hash[:away][:players]
   home << away
