@@ -137,7 +137,7 @@ end
 
 def num_points_scored(player_name)
   all_players(player_name)[:points]
-  
+
   end
 
 def shoe_size(player_name)
@@ -149,7 +149,7 @@ def all_teams
 end
 
 def find_team(team_name)
-  all_teams.find { |team| team[:team_name] == team_name }
+  game_hash.values.find { |team| team[:team_name] == team_name }
 end
 
 def team_names
